@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    width: 1440px;
+    margin: auto;
+}
+
+/*-------------------------------------------------------------*/
+/*-------------------------Header con FLex---------------------*/
+/*-------------------------------------------------------------*/
+.barra-nav {
+    border-bottom: solid 1px hsla(217, 9%, 45%, 0.75);
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.nav-imagen {
+    height: 25px;
+}
+
+.nav-menu {
+    display: flex;
+    width: 70%;
+    gap: 20px;
+    font-size: 20px;
+    color: hsl(219, 9%, 45%);
+
+}
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 60px;
+}
+
+/*-------------------------------------------------------------*/
+/*----------------------------Main-----------------------------*/
+/*-------------------------------------------------------------*/
+.contenedor-principal {
+    display: flex;
+}
+
+.gallery {
+/*    width: 50%;*/
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 600px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-areas:
+        "principal principal principal principal"
+        "sec-1" "sec-2" "sec-3" "sec-4";
+}
+
+.principal {
+    width: 600px;
+    grid-area: principal;
+}
+.imag-sec{
+    width: 100px;
+}
+.sec-1 {
+    grid-area: sec-1;
+}
+
+.sec-2 {
+    grid-area: sec-2;
+}
+
+.sec-3 {
+    grid-area: sec-3;
+}
+
+.sec-4 {
+    grid-area: sec-4;
+}
+
+.texto {
+    width: 50%;
+}

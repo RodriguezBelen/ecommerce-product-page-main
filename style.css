@@ -67,7 +67,7 @@ body {
     grid-template-columns: 100px 100px 100px 100px;
     grid-template-areas:
         "principal principal principal principal"
-        "sec-1" "sec-2" "sec-3" "sec-4";
+        "sec-1 sec-2 sec-3 sec-4";
 }
 
 .principal {
